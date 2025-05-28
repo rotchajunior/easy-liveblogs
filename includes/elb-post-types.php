@@ -24,7 +24,7 @@ function elb_setup_post_types() {
 	);
 	$args   = array(
 		'labels'          => apply_filters( 'elb_post_type_labels', $labels ),
-		'public'          => false,
+		'public'          => true,
 		'query_var'       => false,
 		'rewrite'         => false,
 		'show_ui'         => true,
