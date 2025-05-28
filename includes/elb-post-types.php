@@ -31,6 +31,7 @@ function elb_setup_post_types() {
 		'capability_type' => 'post',
 		'map_meta_cap'    => true,
 		'supports'        => array( 'title', 'author', 'editor' ),
+		'taxonomies'      => array( 'autor', 'post_tag' ),
 		'can_export'      => true,
 		'menu_icon'       => 'dashicons-image-rotate',
 	);
