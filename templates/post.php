@@ -35,7 +35,7 @@ do_action( 'elb_before_liveblog_post', $post );
     ?>
 </div>
 
-<h2 class="elb-liveblog-post-heading"><?php elb_entry_title(); ?></h2>
+<h2 class="titulo font-20 font-space-grotesk"><?php elb_entry_title(); ?></h2>
 
 <div class="elb-liveblog-post-content">
     <?php elb_entry_content(); ?>
