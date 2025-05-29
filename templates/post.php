@@ -11,11 +11,6 @@ do_action( 'elb_before_liveblog_post', $post );
 </p>
 
 <?php if ( elb_display_author_name() ) : ?>
-    <p class="elb-liveblog-post-author">
-        <?php printf( __( 'By %s', ELB_TEXT_DOMAIN ), get_the_author() ); ?>
-    </p>
-<?php endif; ?>
-
 <div class="autor-wrapper font-14">
     <?php
     $autores = get_the_terms( get_the_ID(), 'autor' );
@@ -34,6 +29,7 @@ do_action( 'elb_before_liveblog_post', $post );
     endif;
     ?>
 </div>
+<?php endif; ?>
 
 <h2 class="titulo font-20 font-space-grotesk"><?php elb_entry_title(); ?></h2>
 
